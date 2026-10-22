@@ -58,8 +58,59 @@
 }
 </style>
 
+<style>
+        /* Limited-time ticker */
+        .offer-ticker {
+            width: 100%;
+            background: #1c2d3d;
+            border-bottom: 3px solid #fbbc05;
+            overflow: hidden;
+            white-space: nowrap;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        .ticker-track {
+            display: inline-flex;
+            animation: tickerScroll 22s linear infinite;
+        }
+        .ticker-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 22px;
+            color: #ffffff;
+            font-weight: 800;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+        .ticker-item .t-old { color: #94a3b8; text-decoration: line-through; }
+        .ticker-item .t-new { color: #fbbc05; }
+        .ticker-item .t-code {
+            background: #fbbc05;
+            color: #1c2d3d;
+            padding: 1px 8px;
+            border-radius: 4px;
+        }
+        .ticker-dot { color: #ea4335; }
+        @keyframes tickerScroll {
+            from { transform: translateX(-50%); }
+            to   { transform: translateX(0); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .ticker-track { animation: none; }
+        }
+</style>
 </head>
 <body>
+<!-- Limited-time ticker -->
+<div class="offer-ticker" aria-label="Limited time: $9 with code FINDME">
+    <div class="ticker-track">
+        <span class="ticker-item">⚡ Limited time <span class="ticker-dot">●</span> <span class="t-old">$12</span> <span class="t-new">$9</span> with code <span class="t-code">FINDME</span></span><span class="ticker-item">📍 Get found on Google Maps</span><span class="ticker-item">⚡ Limited time <span class="ticker-dot">●</span> <span class="t-old">$12</span> <span class="t-new">$9</span> with code <span class="t-code">FINDME</span></span><span class="ticker-item">📍 Get found on Google Maps</span><span class="ticker-item">⚡ Limited time <span class="ticker-dot">●</span> <span class="t-old">$12</span> <span class="t-new">$9</span> with code <span class="t-code">FINDME</span></span><span class="ticker-item">📍 Get found on Google Maps</span>
+        <span aria-hidden="true" style="display:inline-flex"><span class="ticker-item">⚡ Limited time <span class="ticker-dot">●</span> <span class="t-old">$12</span> <span class="t-new">$9</span> with code <span class="t-code">FINDME</span></span><span class="ticker-item">📍 Get found on Google Maps</span><span class="ticker-item">⚡ Limited time <span class="ticker-dot">●</span> <span class="t-old">$12</span> <span class="t-new">$9</span> with code <span class="t-code">FINDME</span></span><span class="ticker-item">📍 Get found on Google Maps</span><span class="ticker-item">⚡ Limited time <span class="ticker-dot">●</span> <span class="t-old">$12</span> <span class="t-new">$9</span> with code <span class="t-code">FINDME</span></span><span class="ticker-item">📍 Get found on Google Maps</span></span>
+    </div>
+</div>
 <header class="wrap topbar"><div class="actions"></div><a class="brand" href="https://diyseosupport.gumroad.com/" aria-label="DIYSEO home"><img src="this-logo.gif" alt="DIYSEO logo"></a></header>
 <main>
 <section class="wrap hero"><div><div class="eyebrow">SEO that makes sense</div><h1><span class="orange">No budget.</span><br><span class="blue">No tech skills.</span><br>No problem.</h1><p class="intro">Practical, beginner-friendly SEO guidance to help your business get found online — without the jargon, overwhelm, or agency-sized price tag.</p><a class="btn" href="https://diyseosupport.github.io/maps-guide-landing/">Get the DIYSEO Guide <span aria-hidden="true">↗</span></a><div class="proofline"><span>Made for real beginners</span><span>Clear steps, not jargon</span><span>Work at your own pace</span></div></div></section>

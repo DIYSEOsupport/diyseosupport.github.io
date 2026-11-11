@@ -2,7 +2,6 @@
 
 ## Files
 - `index.html` — the homepage (diyseosupport.github.io). The older `landing.html` was archived on 2026-11-11.
-- `diyseo-logo.png` and `google-maps-checklist.png` — original/cropped image assets for editing.
 
 Both HTML files embed the logo and the single guide image directly, so images do not depend on relative asset paths after publishing. The header and footer use the same cropped DIYSEO wordmark. The page has one featured guide and two primary guide CTAs.
 

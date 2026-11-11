@@ -1,8 +1,7 @@
 # DIYSEO Gumroad Landing Page
 
 ## Files
-- `landing.html` — requested landing-page filename.
-- `landing.html` — matching copy for environments expecting `landing.html`.
+- `index.html` — the homepage (diyseosupport.github.io). The older `landing.html` was archived on 2026-11-11.
 - `diyseo-logo.png` and `google-maps-checklist.png` — original/cropped image assets for editing.
 
 Both HTML files embed the logo and the single guide image directly, so images do not depend on relative asset paths after publishing. The header and footer use the same cropped DIYSEO wordmark. The page has one featured guide and two primary guide CTAs.
@@ -12,8 +11,8 @@ From this folder, use the Gumroad CLI commands supported by your installed versi
 
 Requested commands:
 ```bash
-gumroad pages preview landing.html
-gumroad pages push profile landing.html
+gumroad pages preview index.html
+gumroad pages push profile index.html
 ```
 
 Publishing has not been performed by this project preparation. Confirm the CLI is authenticated and the preview is correct before pushing to your profile.
